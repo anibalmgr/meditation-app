@@ -1,0 +1,76 @@
+# ---- Secrets: never commit ----
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+keystore.properties
+google-services.json
+android/app/google-services.json
+*.p8
+*.p12
+*.mobileprovision
+service-account*.json
+play-service-account*.json
+
+# ---- Node ----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm/
+
+# ---- Expo ----
+.expo/
+.expo-shared/
+dist/
+web-build/
+expo-env.d.ts
+
+# ---- Metro / RN ----
+.metro-health-check*
+*.jsbundle
+.haste_map.json
+
+# ---- Android ----
+android/.gradle/
+android/build/
+android/app/build/
+android/.cxx/
+android/local.properties
+android/captures/
+android/app/release/
+android/app/debug/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.hprof
+
+# ---- Rust ----
+target/
+**/target/
+Cargo.lock
+*.pdb
+
+# ---- Rust native output copied into the app ----
+android/app/src/main/jniLibs/
+
+# ---- Editors / OS ----
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+*.swp
+
+# ---- Claude Code ----
+.claude/
+!.claude/settings.json
+
+# ---- Misc ----
+coverage/
+*.log
+.tmp/
