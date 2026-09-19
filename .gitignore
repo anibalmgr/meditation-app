@@ -66,10 +66,6 @@ android/app/src/main/jniLibs/
 Thumbs.db
 *.swp
 
-# ---- Claude Code ----
-.claude/
-!.claude/settings.json
-
 # ---- Misc ----
 coverage/
 *.log
