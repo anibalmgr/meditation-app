@@ -73,3 +73,19 @@ Thumbs.db
 coverage/
 *.log
 .tmp/
+
+# ---- Added from the Expo template ----
+.kotlin/
+*.orig.*
+*.key
+*.pem
+yarn-debug.*
+*.tsbuildinfo
+
+# The Expo template also ignores the generated native folders outright.
+# Your rules above assume android/ IS committed (see the jniLibs entry),
+# which is the usual choice when you are writing your own native code.
+# Uncomment these only if you switch to a prebuild-regenerates-everything
+# workflow - they are mutually exclusive with the android/ rules above.
+#/android
+#/ios
