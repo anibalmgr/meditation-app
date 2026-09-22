@@ -32,29 +32,11 @@ expo-env.d.ts
 *.jsbundle
 .haste_map.json
 
-# ---- Android ----
-android/.gradle/
-android/build/
-android/app/build/
-android/.cxx/
-android/local.properties
-android/captures/
-android/app/release/
-android/app/debug/
-*.apk
-*.aab
-*.ap_
-*.dex
-*.hprof
-
 # ---- Rust ----
 target/
 **/target/
 Cargo.lock
 *.pdb
-
-# ---- Rust native output copied into the app ----
-android/app/src/main/jniLibs/
 
 # ---- Editors / OS ----
 .vscode/*
@@ -82,10 +64,7 @@ coverage/
 yarn-debug.*
 *.tsbuildinfo
 
-# The Expo template also ignores the generated native folders outright.
-# Your rules above assume android/ IS committed (see the jniLibs entry),
-# which is the usual choice when you are writing your own native code.
-# Uncomment these only if you switch to a prebuild-regenerates-everything
-# workflow - they are mutually exclusive with the android/ rules above.
-#/android
-#/ios
+# ---- Generated native projects (CNG) ----
+# Regenerate with: pnpm expo prebuild
+/android
+/ios
