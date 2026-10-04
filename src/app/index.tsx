@@ -1,8 +1,12 @@
-import { useState } from "react";
-import { Button, Text, View } from "react-native";
+import "@/global.css";
+import { useEffect, useState } from "react";
+import { Pressable, Text, View } from "react-native";
 
 export default function HomeScreen() {
-  const [message, setMessage] = useState("Hello, world!");
+  const [counter, setCounter] = useState(16);
+  const [timer, setTimer] = useState(false);
+
+  useEffect(() => (timer ? setCounter(15) : setCounter(16)));
 
   return (
     <View
@@ -13,15 +17,9 @@ export default function HomeScreen() {
         gap: 8,
       }}
     >
-      <Text>{message}</Text>
-      <Button
-        title="Update Message"
-        onPress={() =>
-          setMessage(
-            message.includes("world") ? "Hello React Native!" : "Hello, world!",
-          )
-        }
-      />
+      <Pressable className="m-2" onPress={() => setTimer(true)}>
+        <Text>{counter}</Text>
+      </Pressable>
     </View>
   );
 }
