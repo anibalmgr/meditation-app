@@ -32,29 +32,11 @@ expo-env.d.ts
 *.jsbundle
 .haste_map.json
 
-# ---- Android ----
-android/.gradle/
-android/build/
-android/app/build/
-android/.cxx/
-android/local.properties
-android/captures/
-android/app/release/
-android/app/debug/
-*.apk
-*.aab
-*.ap_
-*.dex
-*.hprof
-
 # ---- Rust ----
 target/
 **/target/
 Cargo.lock
 *.pdb
-
-# ---- Rust native output copied into the app ----
-android/app/src/main/jniLibs/
 
 # ---- Editors / OS ----
 .vscode/*
@@ -73,3 +55,16 @@ Thumbs.db
 coverage/
 *.log
 .tmp/
+
+# ---- Added from the Expo template ----
+.kotlin/
+*.orig.*
+*.key
+*.pem
+yarn-debug.*
+*.tsbuildinfo
+
+# ---- Generated native projects (CNG) ----
+# Regenerate with: pnpm expo prebuild
+/android
+/ios

@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "meditation-app",
+    "slug": "meditation-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "meditationapp",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anibalgatica.meditationapp"
+    },
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "ios": {
+      "bundleIdentifier": "com.anibalgatica.meditationapp"
+    }
+  }
+}

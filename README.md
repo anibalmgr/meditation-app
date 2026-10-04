@@ -19,6 +19,24 @@ I will write all the code myself and follow documentation, but I am using Claude
 - React Native with [expo](https://expo.dev/)
 - Rust for the audio engine
 
+## Development
+
+To run install this project run:
+
+```bash
+pnpm install
+```
+
+## Available commands:
+
+| Command        | Description                                          |
+| -------------- | ---------------------------------------------------- |
+| `pnpm install` | Install dependencies                                 |
+| `pnpm start`   | Start the Expo dev server (Metro)                    |
+| `pnpm android` | Start the dev server and open the app on Android     |
+| `pnpm web`     | Start the dev server and open the app in the browser |
+| `pnpm lint`    | Lint the project with `expo lint`                    |
+
 ### Licence
 
 Code is MIT. The app name and icon are not included in that grant.

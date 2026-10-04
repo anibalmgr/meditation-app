@@ -2,5 +2,8 @@
   "permissions": {
     "defaultMode": "plan",
     "deny": ["Edit", "Write", "NotebookEdit"]
+  },
+  "enabledPlugins": {
+    "expo@claude-plugins-official": true
   }
 }
