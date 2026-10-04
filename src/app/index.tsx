@@ -18,11 +18,11 @@ export default function HomeScreen() {
       <Text>{message}</Text>
       <Button
         title="Update Message"
-        onPress={() => {
-          message === "Hello, world!"
-            ? setMessage("Hello, React Native!")
-            : setMessage("Hello, world!");
-        }}
+        onPress={() =>
+          setMessage(
+            message.includes("world") ? "Hello React Native!" : "Hello, world!",
+          )
+        }
       />
     </View>
   );
