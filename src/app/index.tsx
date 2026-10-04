@@ -4,12 +4,10 @@ import { Button, Text, View } from "react-native";
 export default function HomeScreen() {
   const [message, setMessage] = useState("Hello, world!");
 
-  // read changes to the message variable and update the UI accordingly
-
   return (
     <View
       style={{
-        flex: 2,
+        flex: 1,
         alignItems: "center",
         justifyContent: "center",
         gap: 8,
